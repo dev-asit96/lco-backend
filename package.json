@@ -4,7 +4,12 @@
   "description": "a basic social media app",
   "main": "index.js",
   "scripts": {
-    "build": "netlify deploy --prod"
+    "start": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-asit96/lco-backend.git"
   },
   "author": "Asit",
   "license": "ISC",
